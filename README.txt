@@ -1,4 +1,4 @@
-**Tech Stack:**
+## Tech Stack:
 - Spring Boot + React frontend
 - Eureka Server (Spring Cloud Netflix): for service discovery
 - Spring Cloud Gateway
@@ -8,8 +8,8 @@
 - Google Gemini API
 - Spring Cloud Config Server: centralized spring cloud config server which is much needed these days 
 
-**Architecture:**
-![image.png](attachment:d09b9cf4-e26c-4798-8539-d9900d2ad223:image.png)
+## Architecture:
+
 - All the microservices is using different databases which indicates they are not dependent on each other. EG: when team user is having upgrading, other microservices will not be impacted in the network.
 - There are 2 communications happen in the system:
   - Asynchronous communication - Activity to AI service (Activity publish saved information to the message queue and the AI services will listen to the message queue. It consume the data and generate the AI generated recommendation from the Google Gemini Server and saved it in MongoDB.
